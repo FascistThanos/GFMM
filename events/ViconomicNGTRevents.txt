@@ -1,0 +1,4305 @@
+# Id 6016825 conflicts HPM Serf Cleanup
+# title desc 17620 conflicts with Vanilla/mods Fascist Soup-Kitchens (17621)
+country_event = {
+	id = 102504
+	title = "EVTNAME17621"
+	desc = "EVTDESC17621"
+	picture = "Poor"
+	
+	trigger = {
+		ai = yes
+		money = 3000000
+	}
+	mean_time_to_happen = {
+		months = 1
+		modifier = {
+			factor = 0.1
+			money = 3100000
+		}
+		modifier = {
+			factor = 0.1
+			money = 3200000
+		}
+		modifier = {
+			factor = 0.1
+			money = 3300000
+		}
+		modifier = {
+			factor = 0.1
+			money = 3400000
+		}
+		modifier = {
+			factor = 0.1
+			money = 3500000
+		}
+		modifier = {
+			factor = 0.1
+			money = 3600000
+		}
+		modifier = {
+			factor = 0.1
+			money = 3700000
+		}
+	}
+	option = {
+		name = "EVTOPTA17621"
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 2500
+		}
+		money = -2500
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 2500
+		}
+		money = -2500
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 2500
+		}
+		money = -2500
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 2500
+		}
+		money = -2500
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 2500
+		}
+		money = -2500
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 2500
+		}
+		money = -2500
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 2500
+		}
+		money = -2500
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 2500
+		}
+		money = -2500
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 2500
+		}
+		money = -2500
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 2500
+		}
+		money = -2500
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 2500
+		}
+		money = -2500
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 2500
+		}
+		money = -2500
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 2500
+		}
+		money = -2500
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 2500
+		}
+		money = -2500
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 2500
+		}
+		money = -2500
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 2500
+		}
+		money = -2500
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 2500
+		}
+		money = -2500
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 2500
+		}
+		money = -2500
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 2500
+		}
+		money = -2500
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 2500
+		}
+		money = -2500
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 2500
+		}
+		money = -2500
+	}
+}
+country_event = {
+	id = 102505
+	title = "EVTNAME17621"
+	desc = "EVTDESC17621"
+	picture = "Poor"
+	
+	trigger = {
+		AND = {
+			is_ai = no
+			money = 10000000
+		}
+	}
+	mean_time_to_happen = {
+		months = 1
+		modifier = {
+			factor = 0.1
+			money = 10000000
+		}
+		modifier = {
+			factor = 0.1
+			money = 11000000
+		}
+		modifier = {
+			factor = 0.1
+			money = 12000000
+		}
+		modifier = {
+			factor = 0.1
+			money = 13000000
+		}
+		modifier = {
+			factor = 0.1
+			money = 14000000
+		}
+		modifier = {
+			factor = 0.1
+			money = 15000000
+		}
+		modifier = {
+			factor = 0.1
+			money = 16000000
+		}
+	}
+	option = {
+		name = "EVTOPTA17621"
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = middle
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+		random_pop = {
+			limit = {
+				AND = {
+					NOT = { cash_reserves = 500 }
+					strata = poor
+				}
+			}
+			money = 5000
+		}
+		money = -5000
+	}
+
+}
