@@ -1,0 +1,7 @@
+name = "Greater Flavor Multiplayer Mod"
+path = "mod/GFMM"
+user_dir = "GFMM"
+replace_path = "history/provinces"
+replace_path = "events"
+replace_path = "decisions"
+replace_path = "gfx"
