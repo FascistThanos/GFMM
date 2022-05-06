@@ -457,20 +457,15 @@ country_event = {
     trigger = {
         tag = MEX
         war = no
-        government = presidential_dictatorship
-        has_country_modifier = fight_the_power
-        134 = { owned_by = THIS }
-    }
-
-    mean_time_to_happen = {
-        months = 1
+        134 = { owned_by = MEX }
     }
 
     option = {
         name = "EVT44815OPTA"
         set_country_flag = texas_recaptured
         war_exhaustion = -30
-        prestige = 5
+        prestige = 25
+		years_of_research = 2
         any_pop = {
             limit = { has_pop_culture = texan }
             militancy = 10
@@ -484,6 +479,29 @@ country_event = {
                 factor = 0.4
             }
         }
+		any_country = {
+			limit = {
+				is_greater_power = yes
+				political_reform = no_slavery
+			}
+			relation = {
+				who = MEX
+				value = 30
+			}
+		}
+		any_country = {
+			limit = {
+				is_greater_power = yes
+				OR = {
+					political_reform = yes_slavery
+					political_reform = freedom_of_womb
+				}
+			}
+			relation = {
+				who = MEX
+				value = -15
+			}
+		}
         any_owned = {
             limit = {
                 NOT = {
@@ -499,10 +517,10 @@ country_event = {
 
 country_event = {
     id = 44820
+	picture = "RGR_flag_big"
     title = "EVTNAME44820" #Republic of the Rio Grande
     desc = "EVTDESC44820"
 	major = yes
-    picture = "mexico_soldiers"
 
     fire_only_once = yes
 
@@ -550,6 +568,7 @@ country_event = {
                 casus_belli = annex_core_country
             }
         }
+		RGR = { country_event = 62010 }
         ai_chance = {
             factor = 90
             modifier = {
@@ -557,6 +576,37 @@ country_event = {
                 war = yes
             }
         }
+    }
+    option = {
+        name = "Freedom for the Riograndese!"
+        any_owned = {
+            limit = { is_core = RGR }
+            secede_province = RGR
+        }
+        RGR = {
+            any_pop = { militancy = -6 }
+            relation = {
+                who = USA
+                value = 50
+            }
+            relation = {
+                who = US2
+                value = 50
+            }
+            relation = {
+                who = TEX
+                value = 50
+            }
+            add_country_modifier = { name = unrecognized_country duration = 728 }
+        }
+        war = {
+            target = RGR
+            attacker_goal = {
+                casus_belli = annex_core_country
+            }
+        }
+        change_tag_no_core_switch = RGR
+		RGR = { country_event = 62010 }
     }
 
     option = {
@@ -608,6 +658,7 @@ country_event = {
         tag = MEX
         is_vassal = no
         NOT = {
+			has_country_flag = texas_recaptured
             exists = YUC
             government = democracy
             government = hms_government
@@ -771,6 +822,7 @@ country_event = {
     option = {
         name = "EVT44825OPTA"
         set_country_flag = treaty_of_guadalupe_hidalgo
+		prestige = -50
         prestige_factor = -0.5
         treasury = 100000
         random_owned = {
@@ -1535,6 +1587,7 @@ country_event = {
     option = {
         name = "EVT110053OPTA" # He got what was coming!
         prestige = 5
+		remove_country_modifier = santa_ana_rule
 		ruling_party_ideology = liberal
 		government = democracy
 		set_country_flag = Government_Democracy
@@ -1583,6 +1636,8 @@ country_event = {
 					province_id = 2174
 					province_id = 2175
 					province_id = 2172
+					province_id = 2662
+					province_id = 102
 				}
 			}
 			secede_province = MEE
@@ -1595,6 +1650,7 @@ country_event = {
 			defender_goal = { casus_belli = civil_war }
 			call_ally = no
 		}
+		ai_chance = { factor = 1 }
     }
 	option = {
         name = "Depose these heathens!"
@@ -1630,19 +1686,22 @@ country_event = {
 					province_id = 2174
 					province_id = 2175
 					province_id = 2172
+					province_id = 2662
+					province_id = 102
 				}
 			}
 			secede_province = MEE
 		}
 		MEE = { capital = 2172 }
 		define_general = { name = "Ignacio Zaragoza" personality = implacable background = cursed_luck }
-		change_tag_no_core_switch = MEE
 		war = {
-			target = MEX
+			target = MEE
 			attacker_goal = { casus_belli = civil_war }
 			defender_goal = { casus_belli = civil_war }
 			call_ally = no
 		}
+		change_tag_no_core_switch = MEE
+		ai_chance = { factor = 1 }
     }
 }
 
@@ -1885,7 +1944,7 @@ country_event = {
 
 country_event = {
     id = 111022
-    title = "Cinco del Mayo"
+    title = "La Batalla de Puebla"
     desc = "Our troops have recaptured Mexico City, expelling the French invaders and the government of Maximilian I. To send a warning against further interventions, he was executed by a firing squad."
     picture = "death_of_max"
 

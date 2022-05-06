@@ -286,6 +286,7 @@ country_event = { #original VIP event by Palisadoes
     option = {
         name = "EVTOPTA131511"
         any_pop = { limit = { has_pop_religion = jewish } consciousness = 3 }
+		set_global_flag = der_judenstaat
     }
 
 }
@@ -527,7 +528,7 @@ country_event = { #original VIP event by Pimparel
     picture = "fortification"
 
     trigger = {
-        tag = PRG
+		tag = PRG
         owns = 2339 #Asuncion
         prestige = 1
         relation = { who = BRZ value = 0 }

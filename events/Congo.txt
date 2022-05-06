@@ -266,6 +266,9 @@ country_event = {
         }
         political_reform = exploitation
         release = CNG
+		CNG = { civilized = yes }
+		CNG = { annex_to = UTI }
+		UTI = { annex_to = CNG }
 		create_vassal = CNG
         CNG = {
             government = absolute_monarchy
@@ -831,6 +834,8 @@ country_event = {
             all_core = { remove_core = MNG }
         }
         random_country = { limit = { tag = KON ai = yes } all_core = { remove_core = KON } }
+		CNG = { annex_to = UTI }
+		UTI = { annex_to = CNG }
         inherit = CNG
         ai_chance = {
             factor = 0.5
@@ -869,6 +874,8 @@ country_event = {
             all_core = { remove_core = MNG }
         }
         random_country = { limit = { tag = KON ai = yes } all_core = { remove_core = KON } }
+		CNG = { annex_to = UTI }
+		UTI = { annex_to = CNG }
         inherit = CNG
         ai_chance = {
             factor = 0.5
@@ -925,6 +932,8 @@ country_event = {
             all_core = { remove_core = MNG }
         }
         random_country = { limit = { tag = KON ai = yes } all_core = { remove_core = KON } }
+		CNG = { annex_to = UTI }
+		UTI = { annex_to = CNG }
         inherit = CNG
     }
 }
@@ -1024,6 +1033,8 @@ country_event = {
             all_core = { remove_core = MNG }
         }
         random_country = { limit = { tag = KON ai = yes } all_core = { remove_core = KON } }
+		CNG = { annex_to = UTI }
+		UTI = { annex_to = CNG }
         inherit = CNG
         ai_chance = { factor = 0.9 }
     }

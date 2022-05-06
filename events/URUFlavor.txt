@@ -7,7 +7,7 @@ country_event = {
     news_desc_short = "EVTDESC46400_NEWS_SHORT"
 
     trigger = {
-        tag = URU
+		tag = URU
         year = 1911
 		OR = {
 			government = democracy
@@ -1460,13 +1460,14 @@ country_event = {
 	trigger = {
         tag = URU
         year = 1870 
+		NOT = { year = 1875 }
 		ruling_party_ideology = liberal
 	}
 
 	fire_only_once = yes
 	
 	mean_time_to_happen =  {
-        months = 8
+        months = 1
 	}
 	
 	option = {

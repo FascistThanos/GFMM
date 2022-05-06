@@ -10,7 +10,7 @@ political_decisions = {
             NOT = { has_country_flag = bulit_notre_dame_afrique }
         }
         allow = {
-            impressionism = 1
+            realism = 1
             war = no
         }
 
@@ -301,7 +301,13 @@ political_decisions = {
         }
         effect = {
             any_owned = {
-                limit = { is_core = GUY }
+                limit = { 
+					OR = {
+						is_core = RIG
+						is_core = GUY
+						is_core = AMA
+					} 
+				}
                 add_province_modifier = {
                     name = core_integration
                     duration = -1
@@ -993,7 +999,6 @@ political_decisions = {
             }
             PLC = {
                 add_accepted_culture = french
-                set_country_flag = settle_french
             }
         }
     }

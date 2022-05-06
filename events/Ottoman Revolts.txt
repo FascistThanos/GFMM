@@ -2,9 +2,19 @@ country_event = {
     id = 123465
     title = "The Mancho Revolt"
     desc = "The Bulgarians are revolting against our rule."
-    fire_only_once = yes
     picture = "BUL_revolt_1"
-    is_triggered_only = yes
+    fire_only_once = yes
+    mean_time_to_happen = { months = 4 }
+	trigger = {
+		NOT = { has_country_flag = enacted_ottomanism }
+        tag = TUR
+        owns = 3290
+		owns = 810
+		owns = 799
+        year = 1836
+        NOT = { year = 1839 }
+        NOT = { exists = BUL }
+    }
     option = {
         name = "Crush them!"
         any_pop = {
@@ -49,7 +59,7 @@ country_event = {
 		}
     }
     option = {
-        name = "Bulgaria shall be free!"
+        name = "Bulgaria shall be free! §BPlay as the revolt§W"
         any_pop = {
             limit = {
                 has_pop_culture = bulgarian
@@ -97,9 +107,18 @@ country_event = {
     id = 123466
     title = "Bosnian revolts in the Posavina"
     desc = "The Bosnians are revolting against our rule."
-    fire_only_once = yes
     picture = "BOS_revolt"
-    is_triggered_only = yes
+    fire_only_once = yes
+    mean_time_to_happen = { months = 3 }
+	trigger = {
+		NOT = { has_country_flag = enacted_ottomanism }
+        tag = TUR
+        owns = 786
+		owns = 785
+        year = 1836
+        NOT = { year = 1839 }
+        NOT = { exists = BOS }
+    }
     option = {
         name = "Crush them!"
         any_pop = {
@@ -137,7 +156,7 @@ country_event = {
 		}
     }
     option = {
-        name = "Bosnia shall be free!"
+        name = "Bosnia shall be free! §BPlay as the revolt§W"
         any_pop = {
             limit = {
                 has_pop_culture = bosniak
@@ -177,10 +196,19 @@ country_event = {
 country_event = {
     id = 123467
     title = "Albanian revolts of $YEAR$" #1836
-    desc = "The Albanians are revolting against our rule."
-    fire_only_once = yes
+    desc = "ALBANIANREVOLTVLORA"
     picture = "ALB_revolt_1"
-    is_triggered_only = yes
+    fire_only_once = yes
+    mean_time_to_happen = { months = 6 }
+	trigger = {
+		NOT = { has_country_flag = enacted_ottomanism }
+		NOT = { has_country_flag = limited_concessions_to_albania }
+        tag = TUR
+        owns = 852
+        year = 1836
+        NOT = { year = 1839 }
+        NOT = { exists = ALB }
+    }
     option = {
         name = "Crush them!"
         any_pop = {
@@ -212,7 +240,7 @@ country_event = {
 		}
     }
     option = {
-        name = "Albania shall be free!"
+        name = "Albania shall be free! §BPlay as the revolt§W"
         any_pop = {
             limit = {
                 has_pop_culture = albanian
@@ -242,6 +270,37 @@ country_event = {
 		}
         change_tag_no_core_switch = ALB
     }
+	option = {
+        name = "Grant them autonomy to avoid bloodshed."
+        any_owned = {
+			limit = {
+				is_core = ALB
+			}
+			add_province_modifier = { name = autonomy_conceded duration = 7300 }
+		}
+		any_pop = {
+			limit = {
+				has_pop_culture = albanian
+			}
+			militancy = -6
+			consciousness = -8
+		}
+		any_pop = {
+			limit = {
+				OR = {
+					has_pop_culture = bulgarian
+					has_pop_culture = greek
+					has_pop_culture = serb
+					has_pop_culture = bosniak
+				}
+			}
+			militancy = 3
+			consciousness = 5
+		}
+		prestige = -10
+		set_country_flag = limited_concessions_to_albania
+		ai_chance = { factor = 0 }
+    }
 }
 country_event = {
     id = 123468
@@ -252,6 +311,7 @@ country_event = {
     mean_time_to_happen = { months = 5 }
     trigger = {
 		NOT = { has_country_flag = enacted_ottomanism }
+		NOT = { has_country_flag = limited_concessions_to_albania }
         tag = TUR
         owns = 853
         owns = 850
@@ -302,7 +362,7 @@ country_event = {
         }
     }
     option = {
-        name = "Albania shall be free!"
+        name = "Albania shall be free! §BPlay as the revolt§W"
         any_pop = {
             limit = {
                 has_pop_culture = albanian
@@ -338,6 +398,37 @@ country_event = {
         }
         change_tag_no_core_switch = ALB
     }
+	option = {
+        name = "Grant them autonomy to avoid bloodshed."
+        any_owned = {
+			limit = {
+				is_core = ALB
+			}
+			add_province_modifier = { name = autonomy_conceded duration = 7300 }
+		}
+		any_pop = {
+			limit = {
+				has_pop_culture = albanian
+			}
+			militancy = -6
+			consciousness = -8
+		}
+		any_pop = {
+			limit = {
+				OR = {
+					has_pop_culture = bulgarian
+					has_pop_culture = greek
+					has_pop_culture = serb
+					has_pop_culture = bosniak
+				}
+			}
+			militancy = 3
+			consciousness = 5
+		}
+		prestige = -10
+		set_country_flag = limited_concessions_to_albania
+		ai_chance = { factor = 0 }
+    }
 }
 country_event = {
     id = 123469
@@ -350,6 +441,7 @@ country_event = {
 	
     trigger = {
 		NOT = { has_country_flag = enacted_ottomanism }
+		NOT = { has_country_flag = limited_concessions_to_albania }
         tag = TUR
         owns = 852
         owns = 849
@@ -381,7 +473,7 @@ country_event = {
         }
     }
     option = {
-        name = "Albania shall be free!"
+        name = "Albania shall be free! §BPlay as the revolt§W"
         any_pop = {
             limit = {
                 has_pop_culture = albanian
@@ -404,6 +496,37 @@ country_event = {
 		ai_chance = {
 			factor = 0
 		}
+    }
+	option = {
+        name = "Grant them autonomy to avoid bloodshed."
+        any_owned = {
+			limit = {
+				is_core = ALB
+			}
+			add_province_modifier = { name = autonomy_conceded duration = 7300 }
+		}
+		any_pop = {
+			limit = {
+				has_pop_culture = albanian
+			}
+			militancy = -6
+			consciousness = -8
+		}
+		any_pop = {
+			limit = {
+				OR = {
+					has_pop_culture = bulgarian
+					has_pop_culture = greek
+					has_pop_culture = serb
+					has_pop_culture = bosniak
+				}
+			}
+			militancy = 3
+			consciousness = 5
+		}
+		prestige = -10
+		set_country_flag = limited_concessions_to_albania
+		ai_chance = { factor = 0 }
     }
 }
 country_event = {
@@ -456,7 +579,7 @@ country_event = {
 		ALB = { define_general = { name = "Dervish Cara" personality = defiant background = aristocrat } }
     }
     option = {
-        name = "Albania shall be free!"
+        name = "Albania shall be free! §BPlay as the revolt§W"
         any_pop = {
             limit = {
                 has_pop_culture = albanian
@@ -494,7 +617,9 @@ country_event = {
             consciousness = -10
             militancy = -10
         }
+		ALB = { government = colonial_company }
 		release_vassal = ALB
+		ALB = { government = colonial_company }
 		relation = { who = ALB value = 400 }
 		diplomatic_influence = { who = ALB value = 400 }
 		ALB = { define_general = { name = "Dervish Cara" personality = defiant background = aristocrat } }
@@ -545,7 +670,7 @@ country_event = {
         }
     }
     option = {
-        name = "Albania shall be free!"
+        name = "Albania shall be free! §BPlay as the revolt§W"
         any_pop = {
             limit = {
                 has_pop_culture = albanian
@@ -618,7 +743,7 @@ country_event = {
         }
     }
     option = {
-        name = "Albania shall be free!"
+        name = "Albania shall be free! §BPlay as the revolt§W"
         any_pop = {
             limit = {
                 has_pop_culture = albanian
@@ -655,6 +780,7 @@ country_event = {
     is_triggered_only = yes
     option = {
         name = "Crush them!"
+		set_global_flag = do_doljani_revolt
         any_pop = {
             limit = {
                 has_pop_culture = bosniak
@@ -678,7 +804,8 @@ country_event = {
 		BOS = { define_general = { name = "Luka Vukalovic" personality = defiant background = aristocrat } }
     }
     option = {
-        name = "Bosnia shall be free!"
+        name = "Bosnia shall be free! §BPlay as the revolt§W"
+		set_global_flag = do_doljani_revolt
         any_pop = {
             limit = {
                 has_pop_culture = bosniak
@@ -764,12 +891,10 @@ country_event = {
 		}
         tag = TUR
         owns = 822
-        owns = 3342
+        owns = 831
         owns = 821
         owns = 820
-        owns = 819
-        owns = 806
-		owns = 858
+        owns = 805
         year = 1852
         NOT = { year = 1855 }
         NOT = { exists = MCD }
@@ -791,7 +916,7 @@ country_event = {
         822 = {
             secede_province = MCD
         }
-        3342 = {
+        831 = {
             secede_province = MCD
         }
         821 = {
@@ -800,17 +925,14 @@ country_event = {
         820 = {
             secede_province = MCD
         }
-        819 = {
-            secede_province = MCD
-        }
         war = {
             target = MCD
             attacker_goal = { casus_belli = conquest_any }
-            defender_goal = { casus_belli = acquire_core_state state_province_id = 806 }
+            defender_goal = { casus_belli = acquire_core_state state_province_id = 805 }
         }
     }
     option = {
-        name = "Macedonia shall be free!"
+        name = "Macedonia shall be free! §BPlay as the revolt§W"
         any_pop = {
             limit = {
                 OR = {
@@ -826,7 +948,7 @@ country_event = {
         822 = {
             secede_province = MCD
         }
-        3342 = {
+        831 = {
             secede_province = MCD
         }
         821 = {
@@ -835,36 +957,94 @@ country_event = {
         820 = {
             secede_province = MCD
         }
-        819 = {
-            secede_province = MCD
-        }
         war = {
             target = MCD
             attacker_goal = { casus_belli = conquest_any }
-            defender_goal = { casus_belli = acquire_core_state state_province_id = 806 }
+            defender_goal = { casus_belli = acquire_core_state state_province_id = 805 }
         }
         change_tag_no_core_switch = MCD
     }
 }
 country_event = {
-    id = 123475
-    title = "The April Uprising" #1876
-    desc = "The Bulgarians are revolting against our rule."
+    id = 1234753
+    title = "The Batak Massacre"
+    desc = "BATAKMASSACRE"
+	major = yes
     fire_only_once = yes
-    picture = "BUL_revolt_3"
-    mean_time_to_happen = { months = 5 }
+    picture = "batak_massacre"
+    mean_time_to_happen = { days = 1 }
     trigger = {
+		has_global_flag = april_uprising
         tag = TUR
+        NOT = { exists = BUL exists = BGR has_global_flag = bulgaria_won_april_uprising }
+    }
+    option = {
+        name = "Uh-oh..."
+		set_global_flag = batak_massacre
+		BUL = { government = hms_government }
+		3373 = {
+			any_pop = {
+				limit = {
+					has_pop_culture = bulgarian
+				}
+				reduce_pop = 0.98
+			}
+		}
+    }
+}
+country_event = {
+    id = 1234752
+    title = "The April Uprising is successful"
+    desc = "We have, against all odds, defeated our Ottoman oppressors. Bulgaria is free!"
+    fire_only_once = yes
+	major = yes
+    picture = "bulgaria_won_april"
+    mean_time_to_happen = { days = 1 }
+    trigger = {
+		has_global_flag = april_uprising
+        tag = BUL
+		truce_with = TUR
+		NOT = { has_global_flag = batak_massacre }
+    }
+    option = {
+        name = "Huzzah!"
+		set_global_flag = bulgaria_won_april_uprising
+		BUL = { government = hms_government }
+    }
+}
+country_event = {
+    id = 1234751
+    title = "The Bloody Letter"#1876
+    desc = "BLOODYLETTER"
+    fire_only_once = yes
+    picture = "the_bloody_letter"
+    mean_time_to_happen = { days = 1 }
+    trigger = {
+		month = 4
+        tag = TUR
+		is_greater_power = no
         owns = 809
         owns = 3373
         owns = 807
-        owns = 3291
         year = 1876
         NOT = { year = 1879 }
         NOT = { exists = BUL }
     }
     option = {
+        name = "Uh-oh..."
+		country_event = { id = 123475 days = 5 }
+    }
+}
+country_event = {
+    id = 123475
+    title = "The April Uprising" #1876
+    desc = "APRILUPRISING"
+    fire_only_once = yes
+	is_triggered_only = yes
+    picture = "BUL_revolt_3"
+    option = {
         name = "Crush them!"
+		set_global_flag = april_uprising
         any_pop = {
             limit = {
                 has_pop_culture = bulgarian
@@ -881,9 +1061,14 @@ country_event = {
         807 = {
             secede_province = BUL
         }
-        3291 = {
-            secede_province = BUL
-        }
+		BUL = { government = prov_gov_liberal }
+		BUL = {
+			define_general = {
+				name = "Ilarion Dragostinov"
+				personality = clever
+				background = nationalist
+			}
+		}
 		casus_belli = {
 			target = BUL
 			type = conquest_low
@@ -896,23 +1081,32 @@ country_event = {
         }
     }
     option = {
-        name = "Bulgaria shall be free!"
+        name = "Bulgaria shall be free! §BPlay as the revolt§W"
+		set_global_flag = april_uprising
         any_pop = {
             limit = {
                 has_pop_culture = bulgarian
             }
-            consciousness = 2
-            militancy = 2
+            consciousness = 9
+            militancy = 8
         }
         3373 = {
+            secede_province = BUL
+        }
+		808 = {
             secede_province = BUL
         }
         807 = {
             secede_province = BUL
         }
-        3291 = {
-            secede_province = BUL
-        }
+		BUL = { government = prov_gov_liberal }
+		BUL = {
+			define_general = {
+				name = "Ilarion Dragostinov"
+				personality = clever
+				background = nationalist
+			}
+		}
 		casus_belli = {
 			target = BUL
 			type = conquest_low
@@ -998,8 +1192,7 @@ country_event = {
     mean_time_to_happen = { months = 5 }
     trigger = {
         tag = TUR
-        owns = 806
-        owns = 808
+        owns = 858
         year = 1880
         NOT = { year = 1883 }
         NOT = { exists = BUL }
@@ -1013,20 +1206,17 @@ country_event = {
             consciousness = 2
             militancy = 2
         }
-        806 = {
-            secede_province = BUL
-        }
 		858 = {
             secede_province = BUL
         }
         war = {
             target = BUL
             attacker_goal = { casus_belli = conquest_any }
-            defender_goal = { casus_belli = acquire_core_state state_province_id = 810 }
+            defender_goal = { casus_belli = acquire_core_state state_province_id = 806 }
         }
     }
     option = {
-        name = "Bulgaria shall be free!"
+        name = "Bulgaria shall be free! §BPlay as the revolt§W"
         any_pop = {
             limit = {
                 has_pop_culture = bulgarian
@@ -1034,16 +1224,13 @@ country_event = {
             consciousness = 2
             militancy = 2
         }
-        806 = {
-            secede_province = BUL
-        }
 		858 = {
             secede_province = BUL
         }
         war = {
             target = BUL
             attacker_goal = { casus_belli = conquest_any }
-            defender_goal = { casus_belli = acquire_core_state state_province_id = 810 }
+            defender_goal = { casus_belli = acquire_core_state state_province_id = 806 }
         }
         change_tag_no_core_switch = BUL
     }
@@ -1088,7 +1275,7 @@ country_event = {
         }
     }
     option = {
-        name = "Armenia shall be free!"
+        name = "Armenia shall be free! §BPlay as the revolt§W"
         any_pop = {
             limit = {
                 has_pop_culture = armenian
@@ -1145,7 +1332,7 @@ country_event = {
         }
     }
     option = {
-        name = "Armenia shall be free!"
+        name = "Armenia shall be free! §BPlay as the revolt§W"
         any_pop = {
             limit = {
                 has_pop_culture = armenian
@@ -1202,7 +1389,7 @@ country_event = {
         }
     }
     option = {
-        name = "Serbia shall be free!"
+        name = "Serbia shall be free! §BPlay as the revolt§W"
         any_pop = {
             limit = {
                 has_pop_culture = serb
@@ -1227,35 +1414,25 @@ country_event = {
 }
 country_event = {
     id = 123481
-    title = "The Epirus revolt"
+    title = "The Macedonian Rebellion"
     desc = "The Greeks are revolting against our rule."
     fire_only_once = yes
     picture = "Epirus_revolt"
     mean_time_to_happen = { months = 5 }
     trigger = {
         tag = TUR
-        owns = 847
-        owns = 848
         owns = 820
         owns = 821
         owns = 819
-        owns = 808
-        owns = 3342
-        owns = 806
-        owns = 807
-        owns = 3291
-        owns = 823
+		owns = 805
 		owns = 858
-        owns = 831
-        owns = 833
-        owns = 832
-        owns = 3306
-        owns = 824
-        owns = 853
-        owns = 3307
         year = 1878
         NOT = { year = 1881 }
         NOT = { exists = GRR }
+		OR = {
+			war_with = RUS
+			truce_with = RUS
+		}
     }
     option = {
         name = "Crush them!"
@@ -1266,10 +1443,7 @@ country_event = {
             consciousness = 2
             militancy = 2
         }
-        847 = {
-            secede_province = GRR
-        }
-        848 = {
+        858 = {
             secede_province = GRR
         }
         820 = {
@@ -1281,49 +1455,8 @@ country_event = {
         819 = {
             secede_province = GRR
         }
-        808 = {
-            secede_province = GRR
-        }
-        3342 = {
-            secede_province = GRR
-        }
-        806 = {
-            secede_province = GRR
-        }
-		858 = {
-            secede_province = GRR
-        }
-        807 = {
-            secede_province = GRR
-        }
-        3291 = {
-            secede_province = GRR
-        }
-        823 = {
-            secede_province = GRR
-        }
-        831 = {
-            secede_province = GRR
-        }
-        833 = {
-            secede_province = GRR
-        }
-        832 = {
-            secede_province = GRR
-        }
-        3306 = {
-            secede_province = GRR
-        }
-        824 = {
-            secede_province = GRR
-        }
-        853 = {
-            secede_province = GRR
-        }
-        3307 = {
-            secede_province = GRR
-        }
 		casus_belli = { target = GRR type = conquest months = 12 }
+		GRR = { government = prov_gov_liberal }
         war = {
             target = GRR
             attacker_goal = { casus_belli = conquest }
@@ -1331,7 +1464,7 @@ country_event = {
         }
     }
     option = {
-        name = "Greece shall be free!"
+        name = "Greece shall be free! §BPlay as the revolt§W"
         any_pop = {
             limit = {
                 has_pop_culture = greek
@@ -1339,10 +1472,7 @@ country_event = {
             consciousness = 2
             militancy = 2
         }
-        847 = {
-            secede_province = GRR
-        }
-        848 = {
+        858 = {
             secede_province = GRR
         }
         820 = {
@@ -1354,49 +1484,8 @@ country_event = {
         819 = {
             secede_province = GRR
         }
-        808 = {
-            secede_province = GRR
-        }
-        3342 = {
-            secede_province = GRR
-        }
-		858 = {
-            secede_province = GRR
-        }
-        806 = {
-            secede_province = GRR
-        }
-        807 = {
-            secede_province = GRR
-        }
-        3291 = {
-            secede_province = GRR
-        }
-        823 = {
-            secede_province = GRR
-        }
-        831 = {
-            secede_province = GRR
-        }
-        833 = {
-            secede_province = GRR
-        }
-        832 = {
-            secede_province = GRR
-        }
-        3306 = {
-            secede_province = GRR
-        }
-        824 = {
-            secede_province = GRR
-        }
-        853 = {
-            secede_province = GRR
-        }
-        3307 = {
-            secede_province = GRR
-        }
 		casus_belli = { target = GRR type = conquest months = 12 }
+		GRR = { government = prov_gov_liberal }
         war = {
             target = GRR
             attacker_goal = { casus_belli = conquest }
@@ -1439,6 +1528,7 @@ country_event = {
         3342 = {
             secede_province = GRR
         }
+		GRR = { government = prov_gov_liberal_two }
         war = {
             target = GRR
             attacker_goal = { casus_belli = conquest_any }
@@ -1446,7 +1536,7 @@ country_event = {
         }
     }
     option = {
-        name = "Greece shall be free!"
+        name = "Greece shall be free! §BPlay as the revolt§W"
         any_pop = {
             limit = {
                 has_pop_culture = greek
@@ -1463,6 +1553,7 @@ country_event = {
         3342 = {
             secede_province = GRR
         }
+		GRR = { government = prov_gov_liberal_two }
         war = {
             target = GRR
             attacker_goal = { casus_belli = conquest_any }
@@ -1524,7 +1615,7 @@ country_event = {
         }
     }
     option = {
-        name = "Greece shall be free!"
+        name = "Greece shall be free! §BPlay as the revolt§W"
         any_pop = {
             limit = {
                 has_pop_culture = greek
@@ -1587,7 +1678,7 @@ country_event = {
         }
     }
     option = {
-        name = "Serbia shall be free!"
+        name = "Serbia shall be free! §BPlay as the revolt§W"
         any_pop = {
             limit = {
                 has_pop_culture = serb
@@ -1610,11 +1701,12 @@ country_event = {
 country_event = {
     id = 123485
     title = "Doljani revolt"
-    desc = "The Serbians are revolting against our rule."
+    desc = "DOLJANIREVOLT"
     fire_only_once = yes
     picture = "SER_revolt_2"
     mean_time_to_happen = { months = 5 }
     trigger = {
+		has_global_flag = do_doljani_revolt
         tag = TUR
         owns = 784
         owns = 785
@@ -1637,6 +1729,7 @@ country_event = {
         785 = {
             secede_province = SRR
         }
+		SRR = { define_general = { name = "Petar Popovic´ Pecija" personality = implacable background = nationalist } }
         war = {
             target = SRR
             attacker_goal = { casus_belli = conquest_any }
@@ -1644,7 +1737,7 @@ country_event = {
         }
     }
     option = {
-        name = "Serbia shall be free!"
+        name = "Serbia shall be free! §BPlay as the revolt§W"
         any_pop = {
             limit = {
                 has_pop_culture = serb
@@ -1658,6 +1751,7 @@ country_event = {
         785 = {
             secede_province = SRR
         }
+		SRR = { define_general = { name = "Petar Popovic´ Pecija" personality = implacable background = nationalist } }
         war = {
             target = SRR
             attacker_goal = { casus_belli = conquest_any }
@@ -1719,7 +1813,7 @@ country_event = {
         }
     }
     option = {
-        name = "Serbia shall be free!"
+        name = "Serbia shall be free! §BPlay as the revolt§W"
         any_pop = {
             limit = {
                 has_pop_culture = bosniak
@@ -1807,7 +1901,7 @@ country_event = {
         }
     }
     option = {
-        name = "Albania shall be free!"
+        name = "Albania shall be free! §BPlay as the revolt§W"
         any_pop = {
             limit = {
                 has_pop_culture = albanian
@@ -1895,7 +1989,7 @@ country_event = {
         }
     }
     option = {
-        name = "Albania shall be free!"
+        name = "Albania shall be free! §BPlay as the revolt§W"
         any_pop = {
             limit = {
                 has_pop_culture = albanian
@@ -1969,7 +2063,7 @@ country_event = {
         }
     }
     option = {
-        name = "Albania shall be free!"
+        name = "Albania shall be free! §BPlay as the revolt§W"
         any_pop = {
             limit = {
                 has_pop_culture = albanian
@@ -2030,7 +2124,7 @@ country_event = {
         }
     }
     option = {
-        name = "Albania shall be free!"
+        name = "Albania shall be free! §BPlay as the revolt§W"
         any_pop = {
             limit = {
                 has_pop_culture = albanian

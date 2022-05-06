@@ -395,11 +395,15 @@ political_decisions = {
         picture = french_military_mission_to_japan
         potential = {
             tag = RUS
+			1089 = { empty = no }
+			1088 = { empty = no }
             owns = 1072 #Okhotsk
-            owns = 1088 #Shumshu
-            1089 = { #Etorofu
+            1644 = { #Nemuru
                 owner = {
-                    primary_culture = japanese
+                    OR = {
+						tag = TKG
+						tag = JAP
+					}
                     OR = {
                         civilized = yes
                         has_country_modifier = western_influences
@@ -419,13 +423,36 @@ political_decisions = {
         effect = {
             set_country_flag = shimoda_treaty
             prestige = 10
-            1088 = { add_core = RUS }
             random_country = {
                 limit = {
-                    owns = 1089 #Etorofu
+                    owns = 1644 #Etorofu
                 }
                 country_event = 32521
             }
+			random_owned = {
+				limit = {
+					owner = {
+						owns = 1089
+						1644 = { owned_by = TKG }
+					}
+				}
+				owner = {
+					1089 = { secede_province = TKG }
+					set_global_flag = eturofu_given
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						owns = 1089
+						1644 = { owned_by = JAP }
+					}
+				}
+				owner = {
+					1089 = { secede_province = JAP }
+					set_global_flag = eturofu_given
+				}
+			}
         }
 
         ai_will_do = {
@@ -974,7 +1001,10 @@ political_decisions = {
     begin_line_of_advantage = {
         picture = begin_line_of_advantage
         potential = {
-            tag = JAP
+            OR = {
+				tag = JAP
+				tag = TKG
+			}
             civilized = yes
             has_country_modifier = fukoku_kyohei
             NOT = {
@@ -2402,6 +2432,7 @@ political_decisions = {
 		}
 		
 		effect = {
+			KOR = { government = colonial_company }
 			random_owned = {
 				limit = { province_id = 1632 }
 				1632 = { 
@@ -2414,6 +2445,7 @@ political_decisions = {
 				1631 = { change_province_name = "Genshu" }
 				owner = { set_global_flag = japanese_rename_busan }
 			}
+			KOR = { government = colonial_company }
 			random_owned = {
 				limit = { province_id = 1624 }
 				1624 = { 
@@ -2426,6 +2458,7 @@ political_decisions = {
 				1637 = { change_province_name = "Saishu" }
 				owner = { set_global_flag = japanese_rename_hanseong }
 			}
+			KOR = { government = colonial_company }
 			random_owned = {
 				limit = { province_id = 1621 }
 				1621 = { 
@@ -2437,6 +2470,7 @@ political_decisions = {
 				1622 = { change_province_name = "Seishin" }
 				owner = { set_global_flag = japanese_rename_sariwon }
 			}
+			KOR = { government = colonial_company }
 			random_owned = {
 				limit = { province_id = 1619 }
 				1619 = { 
@@ -2520,7 +2554,7 @@ political_decisions = {
 				owner = { clr_global_flag = japanese_rename_hanseong }
 			}
 			random_owned = {
-				limit = { province_id = 1627 }
+				limit = { province_id = 1629 }
 				1621 = { 
 					change_province_name = "Hamhung"
 					state_scope = { change_region_name = "Hamhung" }

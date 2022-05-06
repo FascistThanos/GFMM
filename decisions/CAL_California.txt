@@ -69,9 +69,12 @@ political_decisions = {
                 tag = MEX
                 tag = CAL
                 tag = PAC
+				tag = HSA
             }
             NOT = {    has_global_flag = rancho }
             year = 1836
+			owns = 89
+			owns = 104
         }
 
         allow = {
@@ -93,6 +96,7 @@ political_decisions = {
                     province_id = 87
                     province_id = 88
                     province_id = 89
+					province_id = 3566
                     province_id = 90
                     province_id = 3448
                     province_id = 3449
@@ -220,6 +224,7 @@ political_decisions = {
             21 = { add_core = CAL }
             107 = { add_core = CAL }
             108 = { add_core = CAL }
+            3560 = { add_core = CAL }
             109 = { add_core = CAL }
             110 = { add_core = CAL }
             111 = { add_core = CAL }

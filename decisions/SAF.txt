@@ -87,7 +87,7 @@ political_decisions = {
         }
 
         allow = {
-            mass_culture_n_the_avant_garde = 1
+            expressionism = 1
         }
 
         effect = {
@@ -552,6 +552,10 @@ political_decisions = {
             TRN = { all_core = { add_core = THIS } }
             ORA = { all_core = { add_core = THIS } }
             NAL = { all_core = { add_core = THIS } }
+            2574 = { add_core = THIS }
+            2074 = { add_core = THIS }
+            2077 = { add_core = THIS }
+            2083 = { add_core = THIS }
             2084 = { add_core = THIS }
             2085 = { add_core = THIS }
             2086 = { add_core = THIS }
@@ -738,11 +742,29 @@ political_decisions = {
             }
             random_owned = {
                 limit = {
+                        owner = {    NOT = {    mechanized_mining = 1 } }
+                        TRN = {    mechanized_mining = 1 }
+                }
+                owner = {
+                    activate_technology = mechanized_mining
+                }
+            }
+            random_owned = {
+                limit = {
                         owner = {    NOT = {    regenerative_furnaces = 1 } }
                         TRN = {    regenerative_furnaces = 1 }
                 }
                 owner = {
                     activate_technology = regenerative_furnaces
+                }
+            }
+            random_owned = {
+                limit = {
+                        owner = {    NOT = {    experimental_railroad = 1 } }
+                        TRN = {    experimental_railroad = 1 }
+                }
+                owner = {
+                    activate_technology = experimental_railroad
                 }
             }
             random_owned = {

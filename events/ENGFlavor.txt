@@ -619,7 +619,7 @@ country_event = {
         }
         year = 1917
         press_rights = free_press
-        expressionism = 1
+        impressionism = 1
         NOT = {
             year = 1925
         }
@@ -1016,6 +1016,7 @@ country_event = {
         owns = 2491 #Adelaide
         NOT = {
             exists = AST
+			exists = FAS
             year = 1886
         }
     }
@@ -1442,7 +1443,7 @@ country_event = {
             tag = ENL
         }
         year = 1897
-        expressionism = 1
+        impressionism = 1
         NOT = {
             year = 1905
         }
@@ -1581,6 +1582,7 @@ country_event = {
         owns = 2491 #Adelaide
         NOT = {
             year = 1864
+			exists = FAS
         }
     }
 
@@ -2356,7 +2358,7 @@ country_event = {
     }
 
     mean_time_to_happen = {
-        months = 6
+        months = 1
     }
 
     option = {
@@ -3394,14 +3396,28 @@ country_event = {
 
     option = {
         name = "EVTOPTA315004"
-        random_owned = { limit = { owner = { tag = ENG } } owner = { prestige = 15 relation = { who = USA value = 10 } relation = { who = US2 value = 10 } } }
-        random_owned = { limit = { OR = { owner = { tag = USA } owner = { tag = US2 } } }
-            owner = {
-                prestige = 15
-                relation = { who = ENG value = 10 }
-                ENG = { country_event = 315004 }
-            }
-        }
+        prestige = 15
+        relation = { who = ENG value = 10 }
+        ENG = { country_event = 3150041 }
+    }
+}
+
+
+#David Livingstone is Found
+country_event = {
+
+    id = 3150041
+    title = "EVTNAME315004"
+    desc = "EVTDESC315004"
+    picture = "dr_livingstone"
+	is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = "EVTOPTA315004"
+        prestige = 15 
+		relation = { who = USA value = 10 } 
+		relation = { who = US2 value = 10 }
     }
 }
 
@@ -4235,6 +4251,33 @@ province_event = {
     }
 }
 
+#Malta Sette Guigno
+country_event = {
+    id = 99108
+    title = "EVTNAME99108"
+    desc = "EVTDESC99108"
+	picture = "sette_uigno"
+    fire_only_once = yes
+
+    trigger = {
+	year = 1919
+	854 = { owned_by = THIS }
+	NOT = { year = 1921 }
+	}
+	
+    mean_time_to_happen = { months = 3 }
+
+    option = {
+        name = "EVT99108OPT"
+		854 = {
+			any_pop = {
+			militancy = 5
+			consciousness = 6
+			}
+		}
+	}
+}
+
 #####################################################
 #British Home Events#
 #####################################################
@@ -4473,7 +4516,7 @@ country_event = {
             diplomatic_influence = { who = NEW value = -400 }
             diplomatic_influence = { who = NZL value = -400 }
         }
-        set_country_flag = imperial_preference set_country_flag = Government_Dominion
+        set_country_flag = imperial_preference
     }
 
     ###Grant Dominion Status, Grant Irish Home Rule###
@@ -4992,8 +5035,8 @@ country_event = {
 country_event = {
 	id = 17141715
 	picture = "leicester_baloon"
-	title = "EVTNAME999101"
-	desc = "EVTDESC999101"
+	title = "EVTNAME9991011"
+	desc = "EVTDESC9991011"
 	
 	fire_only_once = yes
 	
@@ -5031,5 +5074,51 @@ country_event = {
 		prestige = 5
 		300 = { infrastructure = 1 }
 		any_pop = { limit = { location = { province_id = 300 } } consciousness = 1 }
+	}
+}
+
+country_event = {
+	id = 16121913
+	picture = "moriori_massacres"
+	title = "Enslavement of the Moriori"
+    desc = "EVTDESC16121913"
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = ENG
+		owns = 3494
+		year = 1862
+	}
+
+	mean_time_to_happen = { months = 2 }
+
+	option = {
+		name = "Make them stop this nonsense."
+		prestige = 5
+		any_pop = { limit = { location = { province_id = 3494 } } consciousness = 10 reduce_pop = 0.1 }
+	}
+}
+
+country_event = {
+	id = 16121914
+	picture = "amazonexpedit_engl"
+	title = "The Naturalist on the River Amazons"
+    desc = "EVTDESC16121914"
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = ENG
+		exists = ENG
+		year = 1863
+	}
+
+	mean_time_to_happen = { months = 5 }
+
+	option = {
+		name = "What a great book."
+		prestige = 2
+		any_pop = { limit = { location = { is_core = THIS } } consciousness = -0.1 }
 	}
 }

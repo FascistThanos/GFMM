@@ -113,7 +113,7 @@ blockaded = {
 }
 
 no_adjacent_controlled = {
-    supply_limit = -5
+    supply_limit = -3
 }
 
 
@@ -160,11 +160,11 @@ war = {
     max_war_exhaustion = 100            #base max at war.
     supply_consumption = -0.5
     #war_exhaustion = 0.1
-    badboy = -0.022
+    badboy = -0.033
 }
 
 peace = {
-    max_war_exhaustion = 100            #base max at peace.
+    max_war_exhaustion = 50            #base max at peace.
     supply_consumption = -0.5
     war_exhaustion = -1
     badboy = -0.1
@@ -230,7 +230,7 @@ unciv_nation = {
     cb_generation_speed_modifier = 0.8
     supply_consumption = -0.15
 	research_points_on_conquer = 0.1
-	badboy = -0.1
+    badboy = -0.1
 }
 
 
@@ -268,19 +268,4 @@ in_bankrupcy = {
     #max_military_spending = -0.2
     #max_social_spending = 0.5
     ruling_party_support = -0.75
-}
-
-slight_refund = {
-    tax_efficiency = -0.15
-    tariff_efficiency_modifier = -0.30
-}
-
-medium_refund = {
-    tax_efficiency = -0.25
-    tariff_efficiency_modifier = -0.40
-}
-
-large_refund = {
-    tax_efficiency = -0.40
-    tariff_efficiency_modifier = -0.60
 }
